@@ -142,7 +142,7 @@ git pull 与 git push 操作的目的相同，但是操作的目标相反。
 ``` git
 git pull origin master:my_test
 ```
-上面的命令是将 origin 厂库的 master 分支拉取并合并到本地的 my_test 分支上。
+上面的命令是将 origin 仓库的 master 分支拉取并合并到本地的 my_test 分支上。
 
 如果省略本地分支，则将自动合并到当前所在分支上。如下：
 ``` git
@@ -154,7 +154,7 @@ $git clone <远程Arepository> #克隆你 fork 出来的分支
 
 $git remote add <远程Brepository标签> git@github.com:XXXX/ceph.git #添加远程 Brepository 标签
 
-$git pull <远程B厂库标签> master:master  #从远程 Brepository 的 master 分支拉取最新 objects 合并到本地 master 分支
+$git pull <远程B仓库标签> master:master  #从远程 Brepository 的 master 分支拉取最新 objects 合并到本地 master 分支
 
 $git checkout YYYY #切换到要修改的分支上
 
@@ -172,7 +172,7 @@ $git push origin my_test:my_test #将本地分支my_test提交到远程A reposit
 
 1. 提示出错信息：`fatal: remote origin already exists.`
 
-    在输入 git remote add origin git@github.com:djqiang（github帐号名）/gitdemo（项目名）.git 后出现 fatal: remote origin already exists.
+    在输入 `git remote add origin git@github.com:github帐号/github仓库` 后出现 `fatal: remote origin already exists.`
 
     解决办法如下：
 
