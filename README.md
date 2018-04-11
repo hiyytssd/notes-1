@@ -11,4 +11,4 @@
 - [前端网址集合](./Fed-Url-Collections.md)
 
 - GitHub
-    - [GitHub 入门](./github/GitHub 入门.md)
+    - [GitHub 入门](./github/GitHub入门.md)

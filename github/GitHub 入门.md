@@ -169,6 +169,7 @@ $git commit -a #将修改提交到本地分区
 $git push origin my_test:my_test #将本地分支my_test提交到远程A repository 的 my_test 分支上
 ```
 ### 报错
+
 1. 提示出错信息：fatal: remote origin already exists.
 
     在输入 git remote add origin git@github.com:djqiang（github帐号名）/gitdemo（项目名）.git 后出现 fatal: remote origin already exists.
@@ -179,7 +180,7 @@ $git push origin my_test:my_test #将本地分支my_test提交到远程A reposit
 
     2. 再输入  `git remote add origin git@github.com:你的github账号/github仓库` 就不会报错了！
 
-2、没有密钥的错误信息
+2. 没有密钥的错误信息
 
 ```
 Warning: Permanently added the RSA host key for IP address ‘192.30.253.112’ to the list of known hosts.
