@@ -1,5 +1,17 @@
 # GitHub 简单使用入门
 
+* [设置名字和Email地址](#设置名字和email地址)
+* [创建版本库](#创建版本库)
+* [把文件提交到版本库](#把文件提交到版本库)
+* [版本回退](#版本回退)
+* [删除文件](#删除文件)
+* [远程仓库](#远程仓库)
+* [从远程库克隆](#从远程库克隆)
+* [整个项目同步到github](#整个项目同步到github)
+* [获取并合并](#获取并合并)
+* [参与GitHub上的项目](#参与github上的项目)
+* [报错](#报错)
+
 ### 设置名字和Email地址
 ``` git
 git config --global user.name "Your Name"
@@ -85,6 +97,7 @@ git checkout -- test.txt
 // git checkout其实是用版本库里的版本替换工作区的版本，无论工作区是修改还是删除，都可以“一键还原”。
 ```
 ### 远程仓库
+
 1. 创建秘钥
 ``` git
 ssh-keygen -t rsa -C "youremail@example.com"
@@ -124,7 +137,7 @@ git clone git@github.com:GitHub账户名/仓库名称
 ``` git
 git init // 初始化命令把这个目录变成 Git 可以管理的仓库
 ``` 
-### 整个项目同步到 GitHub
+### 整个项目同步到GitHub
 下列方法同样适用于，修改本地文件后同步到 GitHub 上
 ``` git
 git init // 如果本地仓库已初始化，且只修改某个文件后同步到 GitHub 上，则省略此步骤
@@ -148,7 +161,7 @@ git pull origin master:my_test
 ``` git
 git pull origin master
 ```
-### 参与 GitHub 上的项目
+### 参与GitHub上的项目
 ``` git
 $git clone <远程Arepository> #克隆你 fork 出来的分支
 
@@ -190,4 +203,4 @@ fatal: Could not read from remote repository.
 
 解决方法：
 
-本机第一次链接远程仓库时，需要在第一次链接远程仓库的电脑上重新生成一个密钥，然后执行上面的“远程仓库”中的第 1 – 3 步
+本机第一次链接远程仓库时，需要在第一次链接远程仓库的电脑上重新生成一个密钥，然后执行上面的“[远程仓库](#远程仓库)”中的第 1 – 3 步
