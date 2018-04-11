@@ -205,3 +205,6 @@ fatal: Could not read from remote repository.
 解决方法：
 
 本机第一次链接远程仓库时，需要在第一次链接远程仓库的电脑上重新生成一个密钥，然后执行上面的“[远程仓库](#远程仓库)”中的第 1 – 3 步
+
+### GitHub tips
+Git的奇技淫巧：[GitHub tips](https://github.com/git-tips/tips)
