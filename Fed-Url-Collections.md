@@ -19,6 +19,7 @@
 
 - [GitHub MarkDown 手册](https://help.github.com/categories/writing-on-github/) 
     - [GFM ( GitHub Flavored Markdown Spec )](https://github.github.com/gfm/)
+    - [Github Flavored Markdown语法介绍](https://github.com/guodongxiaren/README)
 
 ### 框架类库
 - [jQuery API 中文文档](https://www.jquery123.com/)
