@@ -170,7 +170,7 @@ $git push origin my_test:my_test #将本地分支my_test提交到远程A reposit
 ```
 ### 报错
 
-1. 提示出错信息：fatal: remote origin already exists.
+1. 提示出错信息：`fatal: remote origin already exists.`
 
     在输入 git remote add origin git@github.com:djqiang（github帐号名）/gitdemo（项目名）.git 后出现 fatal: remote origin already exists.
 
