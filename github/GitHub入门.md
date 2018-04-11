@@ -12,6 +12,7 @@
 * [获取并合并](#获取并合并)
 * [参与GitHub上的项目](#参与github上的项目)
 * [常见报错](#报错)
+* [GitHub tips](#GitHub tips)
 
 ### 设置名字和Email地址
 ``` git
