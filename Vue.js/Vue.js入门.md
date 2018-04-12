@@ -128,17 +128,17 @@ npm install
 ```
 
 - 主要配置文件说明
-1. [package.json](#一packagejson) ：node配置文件
-2. [config/dev-server.js](#二configdev-serverjs) ：构建本地服务器（创建 express 服务器），配置中间件，启动可热重载的服务器，用于开发项目
-3. [build/build.js](#三buildbuildjs)：webpack 打包配置文件
-4. [build/webpack.base.confg.js](四#buildwebpack.base.confgjs) ：webpack 基本配置
-5. [build/webpack.dev.conf.js](#五buildwebpackdevconfjs) ：用于开发的 webpack 设置
-6. [build/webpack.prod.conf.js](#六buildwebpack.prodconfjs) ：用于打包的webpack设置
-7. [config/index.js](#七configindexjs) ：打包时使用的配置
-8. [babelrc](#八babelrc) ：ES6 语法编译配置
-9. [editorconfig](#九editorconfig) ：编辑器配置，定义代码风格
+1. [package.json](#packagejson) ：node配置文件
+2. [config/dev-server.js](#configdev-serverjs) ：构建本地服务器（创建 express 服务器），配置中间件，启动可热重载的服务器，用于开发项目
+3. [build/build.js](#buildbuildjs)：webpack 打包配置文件
+4. [build/webpack.base.confg.js](#buildwebpack.base.confgjs) ：webpack 基本配置
+5. [build/webpack.dev.conf.js](#buildwebpackdevconfjs) ：用于开发的 webpack 设置
+6. [build/webpack.prod.conf.js](#buildwebpack.prodconfjs) ：用于打包的webpack设置
+7. [config/index.js](#configindexjs) ：打包时使用的配置
+8. [babelrc](#babelrc) ：ES6 语法编译配置
+9. [editorconfig](#editorconfig) ：编辑器配置，定义代码风格
 
-**一、package.json**
+### package.json
 
 package.json 文件是项目根目录下的一个文件，定义该项目开发所需要的各种模块以及一些项目配置信息（如项目名称、版本、描述、作者等）。
 
@@ -159,7 +159,7 @@ devDependencies字段：指定了项目开发时所依赖的模块；
 
 在命令行中运行 `npm install` 命令，会自动安装 dependencies 和 devDempendencies 字段中的模块。
 
-**二、config/dev-server.js**
+### config/dev-server.js
 
 >引入配置文件
 引入相关插件
@@ -304,7 +304,7 @@ module.exports = {
 }
 ```
 
-**三、build/webpack.base.confg.js**
+### build/webpack.base.confg.js
 
 >配置编译入口和输出路径
 模块resolve的规则
@@ -402,7 +402,7 @@ module.exports = {
 }
 ```
 
-**四、build/webpack.dev.conf.js**
+### build/webpack.dev.conf.js
 
 >合并基础的webpack配置
 使用styleLoaders
@@ -457,7 +457,7 @@ module.exports = merge(baseWebpackConfig, {
 })
 ```
 
-*配置 Source Maps*
+**配置 Source Maps**
 >source-map：在一个单独的文件中产生一个完整且功能完全的文件。这个文件具有最好的source map，但是它会减慢打包文件的构建速度；
 
 cheap-module-source-map：在一个单独的文件中生成一个不带列映射的 map，不带列映射提高项目构建速度，但是也使得浏览器开发者工具只能对应到具体的行，不能对应到具体的列（符号），会对调试造成不便；
@@ -468,7 +468,7 @@ map。这个选项可以在不影响构建速度的前提下生成完整的 sour
 cheap-module-eval-source-map：这是在打包文件时最快的生成 source map 的方法，生成的Source Map 会和打包后的 JavaScript 文件同行显示，没有列映射，和 eval-source-map 选项具有相似的缺点；
 
 
-**五、build/build.js**
+### build/build.js
 
 >webpack编译
 输出信息
@@ -516,7 +516,7 @@ rm(path.join(config.build.assetsRoot, config.build.assetsSubDirectory), err => {
 })
 ```
 
-**六、build/webpack.prod.conf.js**
+### build/webpack.prod.conf.js
 
 >合并基础的 webpack 配置
 配置 webpack 的输出
@@ -659,7 +659,7 @@ if (config.build.bundleAnalyzerReport) {
 module.exports = webpackConfig
 ```
 
-**七、config/index.js**
+### config/index.js
 
 ``` javascript
 var path = require('path')
@@ -717,7 +717,7 @@ module.exports = {
 }
 ```
 
-**八、.babelrc**
+### .babelrc
 
 Babel 解释器的配置文件，存放在根目录下。Babel 是一个转码器，项目里需要用它将 ES6 代码转为 ES5 代码。
 
@@ -743,7 +743,7 @@ Babel 解释器的配置文件，存放在根目录下。Babel 是一个转码�
 }
 ```
 
-**九、.editorconfig**
+### .editorconfig
 该文件定义项目的编码规范，编译器的行为会与 .editorconfig 文件中定义的一致，并且其优先级比编译器自身的设置要高，这在多人合作开发项目时十分有用而且必要。
 
 ``` javascript
