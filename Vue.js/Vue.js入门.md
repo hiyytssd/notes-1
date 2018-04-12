@@ -3,9 +3,7 @@
 >从 Vue.js 的安装开始，一步步记录入门使用 Vue.js 的过程。
 
 ## 目录
-- [安装 Vue-cli ](#安装Vue-cli)
-
-
+- [安装 Vue-cli ](#安装vue-cli)
 
 
 ### 安装Vue-cli
@@ -68,7 +66,7 @@ npm run dev
 
 如果一切顺利，在命令行工具里可以看到 `I  Your application is running here: http://localhost:8080` 这句话了，直接在浏览器中输入 `http://localhost:8080` 就可以看到一个 Vue 的欢迎界面了。
 
-![vue欢迎界面](../images/vue.png)
+![vue欢迎界面](../images/vue-cli-welcome.png)
 
 **但在这之前建议先安装一下项目依赖**
 
