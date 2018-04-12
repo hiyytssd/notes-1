@@ -89,7 +89,6 @@ npm install
 ```
 如果使用 `npm` 无法安装成功，可以使用 `cnpm` 来安装，最后开始运行项目 `npm run dev`。
 
-[Go To Top](#vue.js入门)
 
 ### Vue-cli目录结构和文件说明
 
@@ -128,15 +127,15 @@ npm install
 ```
 
 - 主要配置文件说明
-1. package.json ：node配置文件
-2. config/dev-server.js ：构建本地服务器（创建 express 服务器），配置中间件，启动可热重载的服务器，用于开发项目
-3. build/build.js：webpack 打包配置文件
-4. build/webpack.base.confg.js ：webpack 基本配置
-5. build/webpack.dev.conf.js ：用于开发的 webpack 设置
-6. build/webpack.prod.conf.js ：用于打包的webpack设置
-7. config/index.js ：打包时使用的配置
-8. babelrc ：ES6 语法编译配置
-9. editorconfig ：编辑器配置，定义代码风格
+1. [package.json](#package.json) ：node配置文件
+2. [config/dev-server.js](#config/dev-server.js) ：构建本地服务器（创建 express 服务器），配置中间件，启动可热重载的服务器，用于开发项目
+3. [build/build.js](#build/build.js)：webpack 打包配置文件
+4. [build/webpack.base.confg.js](#build/webpack.base.confg.js) ：webpack 基本配置
+5. [build/webpack.dev.conf.js](#build/webpack.dev.conf.js) ：用于开发的 webpack 设置
+6. [build/webpack.prod.conf.js](#build/webpack.prod.conf.js) ：用于打包的webpack设置
+7. [config/index.js](#config/index.js) ：打包时使用的配置
+8. [babelrc](#babelrc) ：ES6 语法编译配置
+9. [editorconfig](#editorconfig) ：编辑器配置，定义代码风格
 
 #### package.json
 
@@ -659,7 +658,7 @@ if (config.build.bundleAnalyzerReport) {
 module.exports = webpackConfig
 ```
 
-#### build/config/index.js
+#### config/index.js
 
 ``` javascript
 var path = require('path')
