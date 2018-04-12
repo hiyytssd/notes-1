@@ -132,7 +132,9 @@
 - 翻墙
 
     - [一键翻墙浏览器](https://github.com/Alvin9999/new-pac/wiki)
-    - [赛风 - psiphon3](https://s3.amazonaws.com/psiphone/web/4vul-knjv-amkn/zh/download.html#direct)：需要翻墙才能下载
+    - 赛风 - psiphon3：（需要翻墙才能下载）
+        - [下载地址(amazonaws)](https://s3.amazonaws.com/0ubz-2q11-gi9y/en.html#how_do_i_get_psiphon_3)
+        - [下载地址(官网)](https://psiphon3.co/psiphon-for-pc/)
 
 
 - [Emmet Documentation](https://docs.emmet.io/cheat-sheet/)
