@@ -89,7 +89,7 @@ npm install
 ```
 如果使用 `npm` 无法安装成功，可以使用 `cnpm` 来安装，最后开始运行项目 `npm run dev`。
 
-[Go To Top](#Vue.js入门)
+[Go To Top](#vue.js入门)
 
 ### Vue-cli目录结构和文件说明
 
@@ -138,7 +138,7 @@ npm install
 8. babelrc ：ES6 语法编译配置
 9. editorconfig ：编辑器配置，定义代码风格
 
-##### package.json
+#### package.json
 
 package.json 文件是项目根目录下的一个文件，定义该项目开发所需要的各种模块以及一些项目配置信息（如项目名称、版本、描述、作者等）。
 
@@ -159,7 +159,7 @@ devDependencies：字段指定了项目开发时所依赖的模块；
 
 在命令行中运行 `npm install` 命令，会自动安装 dependencies 和 devDempendencies 字段中的模块。
 
-##### config/dev-server.js
+#### config/dev-server.js
 
 >引入配置文件
 引入相关插件
@@ -304,7 +304,7 @@ module.exports = {
 }
 ```
 
-##### build/webpack.base.confg.js
+#### build/webpack.base.confg.js
 
 >配置编译入口和输出路径
 模块resolve的规则
@@ -402,7 +402,7 @@ module.exports = {
 }
 ```
 
-##### build/webpack.dev.conf.js
+#### build/webpack.dev.conf.js
 
 >合并基础的webpack配置
 使用styleLoaders
@@ -468,7 +468,7 @@ map。这个选项可以在不影响构建速度的前提下生成完整的 sour
 cheap-module-eval-source-map：这是在打包文件时最快的生成 source map 的方法，生成的Source Map 会和打包后的 JavaScript 文件同行显示，没有列映射，和 eval-source-map 选项具有相似的缺点；
 
 
-##### build/build.js
+#### build/build.js
 
 >webpack编译
 输出信息
@@ -516,7 +516,7 @@ rm(path.join(config.build.assetsRoot, config.build.assetsSubDirectory), err => {
 })
 ```
 
-##### build/webpack.prod.conf.js
+#### build/webpack.prod.conf.js
 
 >合并基础的 webpack 配置
 配置 webpack 的输出
@@ -659,7 +659,7 @@ if (config.build.bundleAnalyzerReport) {
 module.exports = webpackConfig
 ```
 
-##### build/config/index.js
+#### build/config/index.js
 
 ``` javascript
 var path = require('path')
@@ -717,7 +717,7 @@ module.exports = {
 }
 ```
 
-##### .babelrc
+#### .babelrc
 
 Babel 解释器的配置文件，存放在根目录下。Babel 是一个转码器，项目里需要用它将 ES6 代码转为 ES5 代码。
 
@@ -743,7 +743,7 @@ Babel 解释器的配置文件，存放在根目录下。Babel 是一个转码�
 }
 ```
 
-##### .editorconfig
+#### .editorconfig
 该文件定义项目的编码规范，编译器的行为会与 .editorconfig 文件中定义的一致，并且其优先级比编译器自身的设置要高，这在多人合作开发项目时十分有用而且必要。
 
 ``` javascript
