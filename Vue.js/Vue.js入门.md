@@ -5,6 +5,15 @@
 ## 目录
 - [安装 Vue-cli](#安装vue-cli)
 - [Vue-cli目录结构和文件说明](#vue-cli目录结构和文件说明)
+    1. [package.json](#packagejson)
+    2. [config/dev-server.js](#configdev-serverjs)
+    3. [build/build.js](#buildbuildjs)
+    4. [build/webpack.base.confg.js](#buildwebpack.base.confgjs)
+    5. [build/webpack.dev.conf.js](#buildwebpackdevconfjs)
+    6. [build/webpack.prod.conf.js](#buildwebpack.prodconfjs) 
+    7. [config/index.js](#configindexjs)
+    8. [babelrc](#babelrc)
+    9. [editorconfig](#editorconfig)
 
 ---
 
@@ -457,7 +466,7 @@ module.exports = merge(baseWebpackConfig, {
 })
 ```
 
-**配置 Source Maps**
+配置 Source Maps
 >source-map：在一个单独的文件中产生一个完整且功能完全的文件。这个文件具有最好的source map，但是它会减慢打包文件的构建速度；
 
 cheap-module-source-map：在一个单独的文件中生成一个不带列映射的 map，不带列映射提高项目构建速度，但是也使得浏览器开发者工具只能对应到具体的行，不能对应到具体的列（符号），会对调试造成不便；
