@@ -21,6 +21,8 @@
     - [GFM ( GitHub Flavored Markdown Spec )](https://github.github.com/gfm/)
     - [Github Flavored Markdown语法介绍](https://github.com/guodongxiaren/README)
 
+- [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)：Airbnb 出品，目前非常流行的 JavaScript 代码规范。
+
 ### 框架类库
 - [jQuery API 中文文档](https://www.jquery123.com/)
 

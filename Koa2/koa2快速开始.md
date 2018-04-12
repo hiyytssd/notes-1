@@ -31,7 +31,7 @@ const Koa = require('koa');
 const app = new Koa();
 
 // 对于任何请求，app 将调用该异步函数处理请求：
-app.use(async(ctx) => {
+App.use(async (ctx) => {
     ctx.body = '<h1>Hello world!</h1>'
 })
 
