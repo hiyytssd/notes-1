@@ -60,7 +60,7 @@ setup unit tests with  Karma + Mocha？ 是否需要安装单元测试工具 Kar
 Setup e2e tests with Nightwatch？ 是否安装e2e来进行用户行为模拟测试。如不需要，所以输入 n。
 ```
 
-到了这里已经可以运行 Vue-cli 了，当中命令行中数输入下列代码
+到了这里已经可以运行 Vue-cli 了，当中命令行中输入下列代码
 ```
 cd vue-demo01
 npm run dev
@@ -68,7 +68,13 @@ npm run dev
 
 如果一切顺利，在命令行工具里可以看到 `I  Your application is running here: http://localhost:8080` 这句话了，直接在浏览器中输入 `http://localhost:8080` 就可以看到一个 Vue 的欢迎界面了。
 
-[vue欢迎界面](../images/vue.png)
+![vue欢迎界面](../images/vue.png)
 
+**但在这之前建议先安装一下项目依赖**
 
+3. 安装项目依赖
 
+```
+npm install
+```
+如果使用 `npm` 无法安装成功，可以使用 `cnpm` 来安装，最后开始运行项目 `npm run dev`。
