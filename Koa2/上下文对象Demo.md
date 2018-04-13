@@ -1,4 +1,6 @@
-# HTTP Response 的类型
+# 上下文对象Demo
+
+## HTTP Response 的类型
 
 Koa 默认的返回类型是text/plain，如果想返回其他类型的内容，可以先用ctx.request.accepts判断一下，客户端希望接受什么数据（根据 HTTP Request 的Accept字段），然后使用ctx.response.type指定返回类型。
 
