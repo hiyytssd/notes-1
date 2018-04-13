@@ -5,6 +5,9 @@
 Koa 默认的返回类型是text/plain，如果想返回其他类型的内容，可以先用ctx.request.accepts判断一下，客户端希望接受什么数据（根据 HTTP Request 的Accept字段），然后使用ctx.response.type指定返回类型。
 
 ``` javascript
+const Koa = require('koa');
+const app = new Koa();
+
 const main = ctx => {
     if (ctx.request.accepts('xml')) {
         ctx.response.type = 'xml';
@@ -22,6 +25,9 @@ const main = ctx => {
         ctx.response.body = 'Hello World';
     }
 };
+
+app.use(main);
+app.listen(3000);
 ```
 运行这个 demo。
 ```
