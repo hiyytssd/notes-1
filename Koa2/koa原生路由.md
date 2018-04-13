@@ -27,7 +27,7 @@ app.listen(3000);
 
 ## 实现原生路由
 
-在根目录下建立 view 文件夹，该文件夹下分别 index.html、xxy.html、404.html
+在根目录下建立 view 文件夹，该文件夹下建立3个html，分别是：index.html、xxy.html、404.html
 
 ``` javascript
 const Koa = require('koa');
