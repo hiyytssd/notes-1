@@ -34,3 +34,4 @@ app.listen(3000);
 $ node demos/03.js
 ```
 访问 http://127.0.0.1:3000 ，现在看到的就是一个 XML 文档了。
+![XML 文档](./images/context-demo.png)
