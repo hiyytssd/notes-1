@@ -80,4 +80,6 @@ console.log('[route] starting at port 3000');
 ```
 
 启动服务后，在地址栏中输入不同的 url，就会进入相应的页面
+
+
 ![原生路由](./images/route.gif)
