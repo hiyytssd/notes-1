@@ -8,7 +8,7 @@ koa-router GitHUB 地址：https://github.com/alexmingoia/koa-router
 
 >npm install koa-router --save
 
-安装成功后再 package.json 文件就可以看到 koa-router 了
+安装成功后在 package.json 文件就可以看到 koa-router 了
 
 ``` json
 "dependencies": {
@@ -48,7 +48,7 @@ app.listen(3000, () => {
 
 上面配置的路由默认访问是 `http://127.0.0.1:3000/xxy`，现在需要给路径前面再加上一个 `article` 前缀，路径变成 `http://127.0.0.1:3000/article/xxy`
 
-设置全局路径前缀
+***设置全局路径前缀***
 
 只要修改原来的 new 出一个 router 对象里面传参就可以了，如：
 
@@ -58,7 +58,7 @@ const router = new Router({
 })
 ```
 
-设置单独页面路径前缀
+***设置单独页面路径前缀***
 
 ``` javascript
 const Koa = require('koa')
@@ -97,8 +97,16 @@ app.listen(3000, () => {
 })
 ```
 
+## 路由传递参数
 
+在需要接受参数的路由中使用上下文对象中的 [ctx.query](./Context%E5%AF%B9%E8%B1%A1.md#ctxrequest-%E5%AF%B9%E8%B1%A1%E5%8C%85%E6%8B%AC%E4%BB%A5%E4%B8%8B%E5%B1%9E%E6%80%A7%E5%92%8C%E5%88%AB%E5%90%8D%E6%96%B9%E6%B3%95) 就可以了
 
+示例：
 
-
-
+``` javascript
+router.get('/', async (ctx, next) => {
+    ctx.body = ctx.query
+})
+``` 
+效果：
+![路由参数](./images/router-arg.gif)
