@@ -105,7 +105,11 @@ app.listen(3000, () => {
 
 ``` javascript
 router.get('/', async (ctx, next) => {
-    ctx.body = ctx.query
+    // ctx.body = ctx.query
+    let query = ctx.query
+    let name = query.name ? query.name : 'what'
+    let age = query.age ? query.age : 0
+    ctx.body = `my name is ${name}, age is ${age}`
 })
 ``` 
 效果：
